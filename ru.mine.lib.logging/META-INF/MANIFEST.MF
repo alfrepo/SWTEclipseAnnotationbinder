@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Logging
-Bundle-SymbolicName: ru.mine.lib.logging;singleton:=true
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: Alexander
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
