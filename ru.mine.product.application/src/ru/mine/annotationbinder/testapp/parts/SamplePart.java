@@ -9,7 +9,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <lars.Vogel@gmail.com> - Bug 419770
  *******************************************************************************/
-package ru.mine.product.application.parts;
+package ru.mine.annotationbinder.testapp.parts;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -27,9 +27,6 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 
 public class SamplePart {
-	
-//	org.apache.commons.logging.LogFactory factory;
-	org.eclipse.nebula.widgets.nattable.NatTable natTable;
 	
 	private Text txtInput;
 	private TableViewer tableViewer;

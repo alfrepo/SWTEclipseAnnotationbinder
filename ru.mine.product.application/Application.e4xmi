@@ -5,15 +5,15 @@
       <children xsi:type="advanced:Perspective" xmi:id="_xB5s0Zp7EeOyCpYIeLcF6w">
         <children xsi:type="basic:PartSashContainer" xmi:id="_xB5s0pp7EeOyCpYIeLcF6w">
           <children xsi:type="basic:PartStack" xmi:id="_xB5s05p7EeOyCpYIeLcF6w">
-            <children xsi:type="basic:Part" xmi:id="_xB5s1Jp7EeOyCpYIeLcF6w" contributionURI="bundleclass://ru.mine.product.application/ru.mine.product.application.parts.SamplePart" label="Sample Part"/>
+            <children xsi:type="basic:Part" xmi:id="_xB5s1Jp7EeOyCpYIeLcF6w" contributionURI="bundleclass://ru.mine.annotationbinder.testapp/ru.mine.annotationbinder.testapp.parts.SamplePart" label="Sample Part"/>
           </children>
         </children>
       </children>
     </children>
     <mainMenu xmi:id="_xB5syZp7EeOyCpYIeLcF6w" elementId="menu:org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_xB5sypp7EeOyCpYIeLcF6w" label="File">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_xB5sy5p7EeOyCpYIeLcF6w" label="Open" iconURI="platform:/plugin/ru.mine.product.application/icons/sample.png" command="_xB5swJp7EeOyCpYIeLcF6w"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_xB5szJp7EeOyCpYIeLcF6w" label="Save" iconURI="platform:/plugin/ru.mine.product.application/icons/save_edit.png" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_xB5sy5p7EeOyCpYIeLcF6w" label="Open" iconURI="platform:/plugin/ru.mine.annotationbinder.testapp/icons/sample.png" command="_xB5swJp7EeOyCpYIeLcF6w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_xB5szJp7EeOyCpYIeLcF6w" label="Save" iconURI="platform:/plugin/ru.mine.annotationbinder.testapp/icons/save_edit.png" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_xB5szZp7EeOyCpYIeLcF6w" label="Quit" command="_xB5svJp7EeOyCpYIeLcF6w"/>
       </children>
       <children xsi:type="menu:Menu" xmi:id="_xB5szpp7EeOyCpYIeLcF6w" label="Help">
@@ -22,15 +22,15 @@
     </mainMenu>
     <trimBars xmi:id="_xB5s1Zp7EeOyCpYIeLcF6w">
       <children xsi:type="menu:ToolBar" xmi:id="_xB5s1pp7EeOyCpYIeLcF6w" elementId="toolbar:org.eclipse.ui.main.toolbar">
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xB5s15p7EeOyCpYIeLcF6w" iconURI="platform:/plugin/ru.mine.product.application/icons/sample.png" command="_xB5swJp7EeOyCpYIeLcF6w"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xB5s2Jp7EeOyCpYIeLcF6w" iconURI="platform:/plugin/ru.mine.product.application/icons/save_edit.png" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xB5s15p7EeOyCpYIeLcF6w" iconURI="platform:/plugin/ru.mine.annotationbinder.testapp/icons/sample.png" command="_xB5swJp7EeOyCpYIeLcF6w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_xB5s2Jp7EeOyCpYIeLcF6w" iconURI="platform:/plugin/ru.mine.annotationbinder.testapp/icons/save_edit.png" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
       </children>
     </trimBars>
   </children>
-  <handlers xmi:id="_xB5svZp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.quitCommand" contributionURI="bundleclass://ru.mine.product.application/ru.mine.product.application.handlers.QuitHandler" command="_xB5svJp7EeOyCpYIeLcF6w"/>
-  <handlers xmi:id="_xB5swZp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.openCommand" contributionURI="bundleclass://ru.mine.product.application/ru.mine.product.application.handlers.OpenHandler" command="_xB5swJp7EeOyCpYIeLcF6w"/>
-  <handlers xmi:id="_xB5sxJp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.saveCommand" contributionURI="bundleclass://ru.mine.product.application/ru.mine.product.application.handlers.SaveHandler" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
-  <handlers xmi:id="_xB5sx5p7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.aboutCommand" contributionURI="bundleclass://ru.mine.product.application/ru.mine.product.application.handlers.AboutHandler" command="_xB5sxpp7EeOyCpYIeLcF6w"/>
+  <handlers xmi:id="_xB5svZp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.quitCommand" contributionURI="bundleclass://ru.mine.annotationbinder.testapp/ru.mine.annotationbinder.testapp.handlers.QuitHandler" command="_xB5svJp7EeOyCpYIeLcF6w"/>
+  <handlers xmi:id="_xB5swZp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.openCommand" contributionURI="bundleclass://ru.mine.annotationbinder.testapp/ru.mine.annotationbinder.testapp.handlers.OpenHandler" command="_xB5swJp7EeOyCpYIeLcF6w"/>
+  <handlers xmi:id="_xB5sxJp7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.saveCommand" contributionURI="bundleclass://ru.mine.annotationbinder.testapp/ru.mine.annotationbinder.testapp.handlers.SaveHandler" command="_xB5sw5p7EeOyCpYIeLcF6w"/>
+  <handlers xmi:id="_xB5sx5p7EeOyCpYIeLcF6w" elementId="ru.mine.product.application.handler.aboutCommand" contributionURI="bundleclass://ru.mine.annotationbinder.testapp/ru.mine.annotationbinder.testapp.handlers.AboutHandler" command="_xB5sxpp7EeOyCpYIeLcF6w"/>
   <bindingTables xmi:id="_xB5svpp7EeOyCpYIeLcF6w" bindingContext="_xB5suZp7EeOyCpYIeLcF6w">
     <bindings xmi:id="_xB5sv5p7EeOyCpYIeLcF6w" keySequence="M1+Q" command="_xB5svJp7EeOyCpYIeLcF6w"/>
     <bindings xmi:id="_xB5swpp7EeOyCpYIeLcF6w" keySequence="M1+O" command="_xB5swJp7EeOyCpYIeLcF6w"/>

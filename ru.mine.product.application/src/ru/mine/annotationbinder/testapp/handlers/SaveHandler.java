@@ -9,20 +9,24 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <lars.Vogel@gmail.com> - Bug 419770
  *******************************************************************************/
-package ru.mine.product.application.handlers;
+package ru.mine.annotationbinder.testapp.handlers;
 
+import org.eclipse.e4.core.di.annotations.CanExecute;
 import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.ui.workbench.IWorkbench;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.swt.widgets.Shell;
+import org.eclipse.e4.ui.workbench.modeling.EPartService;
 
+public class SaveHandler {
 
-public class QuitHandler {
-	@Execute
-	public void execute(IWorkbench workbench, Shell shell){
-		if (MessageDialog.openConfirm(shell, "Confirmation",
-				"Do you want to exit?")) {
-			workbench.close();
+	@CanExecute
+	public boolean canExecute(EPartService partService) {
+		if (partService != null) {
+			return !partService.getDirtyParts().isEmpty();
 		}
+		return false;
+	}
+
+	@Execute
+	public void execute(EPartService partService) {
+		partService.saveAll(false);
 	}
 }

@@ -9,16 +9,20 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <lars.Vogel@gmail.com> - Bug 419770
  *******************************************************************************/
-package ru.mine.product.application.handlers;
+package ru.mine.annotationbinder.testapp.handlers;
 
 import org.eclipse.e4.core.di.annotations.Execute;
+import org.eclipse.e4.ui.workbench.IWorkbench;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.Shell;
 
-public class AboutHandler {
+
+public class QuitHandler {
 	@Execute
-	public void execute(Shell shell) {
-		// comment
-		MessageDialog.openInformation(shell, "About", "Eclipse 4 Application example.");
+	public void execute(IWorkbench workbench, Shell shell){
+		if (MessageDialog.openConfirm(shell, "Confirmation",
+				"Do you want to exit?")) {
+			workbench.close();
+		}
 	}
 }

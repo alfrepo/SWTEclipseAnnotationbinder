@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<relativePath>../ru.mine.parent/pom.xml</relativePath>
-		<groupId>ru.mine</groupId>
-		<artifactId>ru.mine.parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
-
-  <artifactId>ru.mine.product.application</artifactId>
+  <artifactId>ru.mine.annotationbinder.testapp</artifactId>
   <packaging>eclipse-plugin</packaging>
-  <groupId>ru.mine</groupId>
   <dependencies>
   	<dependency>
   		<groupId>commons-lang</groupId>
@@ -27,4 +21,10 @@
   		</dependency>
   	</dependencies>
   </dependencyManagement>
+  <version>1.0.0-SNAPSHOT</version>
+  <parent>
+  	<groupId>ru.mine</groupId>
+  	<artifactId>ru.mine.annotationbinder.parent</artifactId>
+  	<version>1.0.0-SNAPSHOT</version>
+  </parent>
 </project> 
